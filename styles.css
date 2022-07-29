@@ -1,0 +1,88 @@
+html {
+    background: url('./background.jpg') top center;
+    background-size: cover;
+}
+
+body, html {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    color: ghostwhite;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h3, p {
+    font-size: 30px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.choice-buttons {
+    display: flex;
+    gap: 100px;
+}
+
+#rock, #paper, #scissors {
+    max-height: 180px;
+    width: auto;
+    background: rgba(250, 249, 249, 0.3);
+    border-radius: 25px;
+    transition: all 1s ease;
+    
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+    transform: rotate(360deg) scale(1.2) ;
+    background-color: rgba(250, 6, 31, 0.66);
+}
+
+.scoreboard {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 60px auto 0;
+    background: rgba(0, 0, 0, 0.6);
+    border: 6px solid black;
+    border-radius: 20px;
+}
+
+.rules {
+    color: black;
+    font-weight: 900;
+}
+
+.round-result {
+    margin-top: 60px;
+}
+
+.reset-btn {
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.6);
+    border: 6px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 28px;
+    width: 300px;
+    margin: 40px auto;
+    
+}

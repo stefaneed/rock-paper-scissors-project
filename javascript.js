@@ -6,7 +6,6 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-
 // Create function for computerPlay() to randomly returns rock, paper, or scissors-----
 
 function computerPlay(x, y, z) {
@@ -14,7 +13,6 @@ function computerPlay(x, y, z) {
 
     return choices[Math.floor(Math.random() * choices.length)];
 }
-
 
 
 // Create function that plays one round of the game, has two parameters, returns string that declares the winner.-----//
@@ -39,8 +37,6 @@ function playRound(playerSelection, computerSelection) {
 } 
 
 
-
-
 // Create function gameResults() to return results of scoreBoard after 5 rounds-----
 
 function gameResults(playerScore, computerScore) {
@@ -56,7 +52,6 @@ function gameResults(playerScore, computerScore) {
     }
 
 }
-
 
 
 // Create function called game(), plays 5 rounds, keeps score, and reports winner or loser at end-----
@@ -82,7 +77,8 @@ function game() {
 }
 
 
-game();
+// game();
+
 
 
 
