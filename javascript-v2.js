@@ -12,9 +12,7 @@ let computerScore = 0;
 
 choiceButtons.forEach(choiceButton => choiceButton.addEventListener('click', (e) => {
     playerSelection = e.target.id;
-        console.log(playerSelection)
     computerPlay();
-        console.log(computerSelection);
     playRound(); 
 }))
 
